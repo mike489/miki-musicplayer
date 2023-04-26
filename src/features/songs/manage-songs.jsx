@@ -22,7 +22,7 @@ const ManageSongs = () => {
 
   useEffect(() => {
     if (success) navigate(-1);
-  }, [success]);
+  },[success]);
 
   useEffect(() => {
     if (location.state.mode === "edit") {
