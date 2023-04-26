@@ -21,11 +21,3 @@ export const deleteSongApi = async (songId) => {
   await axios.delete(`${apiUrl}/songs/${songId}/`);
 };
 
-server.listen(3001, "localhost"); // or server.listen(3001, '0.0.0.0'); for all interfaces
-server.on("listening", function () {
-  console.log(
-    "Express server started on port %s at %s",
-    server.address().port,
-    server.address().address
-  );
-});
